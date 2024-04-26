@@ -1,0 +1,43 @@
+.secctionApod {
+}
+
+.infoApod {
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 1400px;
+}
+
+h2 {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.85rem;
+  line-height: 2.25rem;
+  padding: 0.75rem;
+  padding-top: 0px;
+  margin-bottom: 2.25rem;
+}
+
+.infoImage {
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000);
+}
+
+img {
+  width: 100%;
+  max-height: 560px;
+}
+
+.infoText {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+}

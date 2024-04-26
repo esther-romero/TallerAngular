@@ -1,0 +1,17 @@
+<section class="secctionApod">
+  <div class="infoApod">
+    <h2>Astronomy Picture of the Day</h2>
+
+    <div class="infoImage">
+      <img [src]="apodData.url" alt="Astronomy Picture" />
+
+      <div class="infoText">
+        <div>{{ apodData.title }}</div>
+
+        <p>{{ apodData.date }}</p>
+
+        <p>{{ apodData.explanation }}</p>
+      </div>
+    </div>
+  </div>
+</section>
