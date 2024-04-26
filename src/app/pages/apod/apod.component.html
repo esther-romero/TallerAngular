@@ -1,4 +1,23 @@
 <section class="secctionApod">
+  <div>
+    <button class="back" (click)="navigate()">
+      <svg
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+
+        <path d="M9 11l-4 4l4 4m-4 -4h11a4 4 0 0 0 0 -8h-1" />
+      </svg>
+    </button>
+  </div>
+
   <div class="infoApod">
     <h2>Astronomy Picture of the Day</h2>
 
@@ -6,11 +25,11 @@
       <img [src]="apodData.url" alt="Astronomy Picture" />
 
       <div class="infoText">
-        <div>{{ apodData.title }}</div>
+        <div class="apodTitle">{{ apodData.title }}</div>
 
-        <p>{{ apodData.date }}</p>
+        <p class="apodDate">{{ apodData.date }}</p>
 
-        <p>{{ apodData.explanation }}</p>
+        <p class="apodExplanation">{{ apodData.explanation }}</p>
       </div>
     </div>
   </div>

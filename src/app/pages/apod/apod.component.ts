@@ -13,12 +13,16 @@ import { HttpClientModule } from '@angular/common/http';
 export class ApodComponent {
   public apodData: any;
 
-  constructor(private nasaService: NasaService) {}
+  constructor(private nasaService: NasaService, private router: Router) {}
 
   ngOnInit(): void {
     this.nasaService.getAPOD().subscribe((data) => {
       console.log(data);
       this.apodData = data;
     });
+  }
+
+  navigate() {
+    this.router.navigate(['/']);
   }
 }
