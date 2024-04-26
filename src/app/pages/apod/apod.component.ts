@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NasaService } from '../../core/services/nasa.service';
 import { Router, RouterLink } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-apod',
